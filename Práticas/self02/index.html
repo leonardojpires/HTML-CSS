@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Exercise</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(143, 187, 153);
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav > a {
+            background-color: rgb(129, 233, 121);
+            padding: 4px;
+            margin: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: rgb(89, 90, 74);
+            font-weight: bold;
+        }
+
+        section {
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        article:hover > img#hide {
+            display: block;
+        }
+
+        .caixatexto {
+            box-shadow: 7px 7px 8px 1px rgba(0, 0, 0, 0.308);
+        }
+
+        .caixatexto > article > section {
+            margin: 0px;
+            background-color: rgba(175, 175, 175, 0.425);
+            box-shadow: 2px 2px 1px 1px rgb(65, 65, 65);
+        }
+
+        article > img {
+            display: none;
+        }
+
+        aside {
+            background-color: gray;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            width: 15%;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 4px;
+            margin: 0px auto;
+        }
+
+        footer > p {
+            margin: 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Testes Sinistros</h1>
+        <hr>
+        <nav>
+            <a href="https://open.spotify.com/playlist/1fMtcRaEpDJbJIPuWxkA1H?si=e5d0922f4649463d" target="_blank" rel="external">Spotify</a>
+            <a href="#" target="_blank" rel="external">Youtube</a>
+            <a href="#" rel="next">Outros</a>
+        </nav>
+    </header>
+    <main>
+        <section class="caixatexto">
+            <article>
+                <h2>Parágrafo Random</h2>
+                <section>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quasi fugiat exercitationem iusto tempore eos accusamus aut saepe, vitae eum deserunt optio ad illo quo itaque, quibusdam explicabo in autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde distinctio vero asperiores similique voluptates excepturi ab laboriosam? Error reprehenderit maxime pariatur nemo cumque molestiae id perferendis reiciendis amet adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tempore, hic quas incidunt doloribus corporis numquam, facilis animi odio atque nostrum ad asperiores. Sit minus reiciendis consectetur perferendis harum provident.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quasi fugiat exercitationem iusto tempore eos accusamus aut saepe, vitae eum deserunt optio ad illo quo itaque, quibusdam explicabo in autem.</p>
+                </section>
+                <p><a href="https://pt.wikipedia.org/wiki/Sandu%C3%ADche" target="_blank" rel="external">Sanduíche</a> de Peixe Esparguete</p>
+                <aside>Isto foi feito devido a um delírio coletivo</aside>
+            </article>
+        </section>
+        <section class="caixatexto">
+            <h3>Funny</h3>
+            <article>
+                <p>Olha aqui</p>
+                <img id="hide" src="images/img1.jpg" alt="Imagem sinistra">
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Leonardo Pires</p>
+    </footer>
+</body>
+</html>
