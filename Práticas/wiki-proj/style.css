@@ -54,7 +54,6 @@ header p {
 }
 
 nav {
-    margin-top: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     display: flex;
@@ -112,6 +111,12 @@ main p {
     max-width: 750px;
 }
 
+main figcaption {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
 #main-content {
     display: flex;
     align-items: flex-start;
@@ -125,13 +130,18 @@ main p {
     flex-shrink: 0;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
 }
-
 #lateral-zone p {
     color: white;
     width: 300px;
     flex-shrink: 0;
     text-align: center;
     margin: auto;
+}
+
+#lateral-zone figcaption {
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #lateral-zone h2 {
@@ -147,7 +157,6 @@ img#leo {
     width: 350px;
     display: block;
     margin: auto;
-    margin-bottom: 10px;
 }
 
 img#side-characters {
@@ -155,6 +164,7 @@ img#side-characters {
     display: block;
     margin: auto;
     padding: 20px;
+    padding-bottom: 0px;
 }
 
 article {
@@ -171,6 +181,7 @@ article > aside {
     color: white;
     padding: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    max-width: 750px;
 
 }
 
@@ -216,7 +227,7 @@ footer a:hover {
       order: 2;
       width: 100%;
     }
-    
+
     article {
       order: 1;
       width: 100%;
