@@ -20,6 +20,16 @@
     padding: 0px;
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 p {
     text-align: justify; 
 }
@@ -39,8 +49,13 @@ header img {
     margin: 20px;
 }
 
+header h1 {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
 header p {
     padding: 5px 5px 5px 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 
 .container {
@@ -70,6 +85,11 @@ nav a {
     border-radius: 7px;
 }
 
+nav a:hover {
+    background-color: var(--cor5);
+    transition-duration: .5s;
+}
+
 @media screen and (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -83,6 +103,14 @@ nav a {
     header h1, p{
         margin: 10px;
         text-align: center;
+    }
+
+    p#note {
+        font-size: 0.9em;
+        text-indent: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-style: italic;
     }
 }
 
@@ -102,6 +130,22 @@ main {
     border-radius: 10px;
 }
 
+main#cs {
+    margin: 10px auto;
+    padding: 10px;
+}
+
+main#cs > p {
+    margin: auto;
+    text-align: center;
+    text-indent: 0px;
+}
+
+main h1 {
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    padding: 5px;
+}
+
 main p {
     margin: 15px 0px;
     text-align: justify;
@@ -109,6 +153,10 @@ main p {
     font-size: 1em;
     line-height: 1.5em;
     max-width: 750px;
+}
+
+main img {
+    margin-bottom: 10px;
 }
 
 main figcaption {
@@ -120,6 +168,13 @@ main figcaption {
 #main-content {
     display: flex;
     align-items: flex-start;
+}
+
+#note {
+    font-size: 0.9em;
+    text-indent: 0px;
+    margin-top: 50px;
+    font-style: italic;
 }
 
 #lateral-zone {
@@ -154,7 +209,7 @@ main figcaption {
 }
 
 img#leo {
-    width: 350px;
+    width: 300px;
     display: block;
     margin: auto;
 }
@@ -197,11 +252,26 @@ article > aside ul {
     margin-bottom: 10px;
 }
 
+article > aside li {
+    color: white;
+    margin-bottom: 5px;
+}
+
+article > aside a {
+    text-decoration: none;
+}
+
+article > aside a:hover {
+    font-weight: bold;
+}
+
 footer {
     background-color: black;
     color: white;
     font-size: 0.8em;
     padding: 15px;
+    bottom: 0;
+    margin-top: auto;
 }
 
 footer p {
@@ -232,4 +302,4 @@ footer a:hover {
       order: 1;
       width: 100%;
     }
-  }
+}
