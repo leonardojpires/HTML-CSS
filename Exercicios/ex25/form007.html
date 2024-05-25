@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="idis">Distrito: </label>
+            <select name="distrito" id="idis">
+
+                <option value="" selected>--- Escolhe ---</option>
+                <optgroup label="Região Norte">
+                    <option value="PT">Porto</option>
+                    <option value="BG">Braga</option>
+                    <option value="VR">Vila Real</option>
+                </optgroup>
+
+                <optgroup label="Região Centro">
+                    <option value="AV">Aveiro</option>
+                    <option value="VS">Viseu</option>
+                    <option value="CB">Castelo Branco</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+</body>
+</html>
